@@ -17,7 +17,7 @@ $ npm install --save number
 *component*
 
 ```sh
-$ component install --save jwerle/nunber
+$ component install --save jwerle/number
 ```
 
 *bower*
@@ -29,7 +29,10 @@ $ bower install number
 *browser*
 
 ```html
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="https://raw.github.com/jwerle/number/master/build/build.js"></script>
+<script type="text/javascript">
+  var number = require('number');
+</script>
 ```
 
 ## usage
@@ -81,7 +84,7 @@ Setter the `isGetter` flag to `true` will define the property as a getter:
 
 ```js
 number.extend('sqrt', true, function () {
-	return Math.sqrt(this);
+  return Math.sqrt(this);
 });
 
 console.log((4).sqrt); // 2
@@ -91,20 +94,20 @@ We can create a function that calculates the GCD (Greatest Common Divisor:
 
 ```js
 number.extend('gcd', function (y) {
-	var x = this
-	y = y || 0;
-	while (y != 0) {
-		var z = x % y;
-		x = y;
-		y = z;
-	}
-	
-	return Math.abs(x);
+  var x = this
+  y = y || 0;
+  while (y != 0) {
+    var z = x % y;
+    x = y;
+    y = z;
+  }
+  
+  return Math.abs(x);
 });
 
 (3).gcd(-7); // 1
 ```
-	
+  
 ## license
 
 MIT
