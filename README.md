@@ -3,6 +3,9 @@ number
 
 Number utility functions. Inspired by the ruby Integer object.
 
+[![build status](https://secure.travis-ci.org/jwerle/number.png)](http://travis-ci.org/jwerle/number)
+[![testling badge](https://ci.testling.com/jwerle/number.png)](https://ci.testling.com/jwerle/number)
+
 ## install
 
 *node*
