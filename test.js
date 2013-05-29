@@ -31,6 +31,4 @@ assert((4).odd === false);
 assert((3).pred === 2);
 assert((4).pred === 3);
 
-
-
 ok();
